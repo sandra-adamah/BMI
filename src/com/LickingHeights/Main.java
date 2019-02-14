@@ -11,8 +11,7 @@ public class Main {
         keyboard = new Scanner(System.in);
 
         int heightInFeet, heightInInches, totalHeight;
-        int weightInPounds;
-        double inchesInMeters, weightInKg;
+        double inchesInMeters,weightInPounds,total,weightInKg;
 
         System.out.println("What is your height? (in feet)");
         heightInFeet = keyboard.nextInt();
@@ -28,6 +27,11 @@ public class Main {
         weightInPounds = keyboard.nextInt();
 
         weightInKg = (weightInPounds*0.453592);
+        //gathering information on weight
+
+        total = (weightInKg/(inchesInMeters*inchesInMeters));
+        System.out.println("Your BMI is "+total+"");
+
 
 
 
