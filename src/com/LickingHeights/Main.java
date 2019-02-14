@@ -10,13 +10,21 @@ public class Main {
         //phase 2 (initalizing)
         keyboard = new Scanner(System.in);
 
-        int heightInFeet, heightInInches;
+        int heightInFeet, heightInInches, totalHeight;
+        double inchesInMeters;
 
         System.out.println("What is your height? (in feet)");
         heightInFeet = keyboard.nextInt();
 
         System.out.println("What is your height? (in inches)");
         heightInInches = keyboard.nextInt();
+
+        totalHeight = ((heightInFeet*12)+heightInInches);
+        inchesInMeters = (totalHeight *0.0254);
+        //gathered all the information need for the height
+
+        
+
 
 
 
